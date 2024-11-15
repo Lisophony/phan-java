@@ -1,0 +1,3 @@
+Bracket sequence [((())()(())]] is not correct.
+On of the possible solutions : [[((()))()(())]]
+
