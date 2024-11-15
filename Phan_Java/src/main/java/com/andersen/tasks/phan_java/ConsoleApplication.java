@@ -1,6 +1,5 @@
 package com.andersen.tasks.phan_java;
 
-import java.awt.event.KeyEvent;
 import java.util.Scanner;
 
 public class ConsoleApplication {
@@ -15,7 +14,7 @@ public class ConsoleApplication {
                 option = Integer.parseInt(scanner.nextLine());
             }
             catch (NumberFormatException e) {
-                System.out.println(e.getMessage());
+                System.out.println("There is no such option");
                 continue;
             }
             switch (option) {
@@ -40,6 +39,8 @@ public class ConsoleApplication {
             }
         }
     }
+
+
 
     public static void showMenu() {
         System.out.println("1 - Enter number\n2 - Enter name\n3 - Enter numeric array\n4 - exit");
