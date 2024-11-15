@@ -32,6 +32,9 @@ public class MainViewController {
 
     private String checkNumber(String number) {
         try {
+            if(number.isEmpty()) {
+                throw new EpmtyInputException();
+            }
             double intNum = Double.parseDouble(number);
             if(intNum > 7) {
                 return "Hello";
@@ -40,10 +43,19 @@ public class MainViewController {
         catch (NumberFormatException e) {
             return "Number format is incorrect";
         }
+        catch (EpmtyInputException e) {
+            return e.getMessage();
+        }
         return "";
     }
 
     private String checkName(String name) {
+        try {
+            if(name.isEmpty()) throw new EpmtyInputException();
+        }
+        catch (EpmtyInputException e) {
+            return e.getMessage();
+        }
         if(name.equals("John")) {
             return "Hello, John";
         }
@@ -54,6 +66,9 @@ public class MainViewController {
 
     private String parseArray(String[] array) {
         try {
+            if(array[0].isEmpty()) {
+                throw new EpmtyInputException();
+            }
             int[] intArray = Arrays.stream(array).mapToInt(Integer::parseInt).toArray();
             StringBuilder sb = new StringBuilder();
             Arrays.stream(intArray).forEach(x -> {
@@ -66,6 +81,9 @@ public class MainViewController {
         }
         catch (NumberFormatException e) {
             return "Array is incorrect";
+        }
+        catch (EpmtyInputException e) {
+            return e.getMessage();
         }
     }
 }
