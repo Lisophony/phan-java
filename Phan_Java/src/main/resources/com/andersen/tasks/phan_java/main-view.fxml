@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andersen.tasks.phan_java.MainViewController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="309.0" spacing="45.0" HBox.hgrow="ALWAYS">
+         <children>
+            <TextField fx:id="enterNumberTextField" promptText="Enter number">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <TextField fx:id="enterNameTextField" promptText="Enter name" />
+            <TextField fx:id="enterArrayTextField" promptText="Enter numeric array" />
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Button fx:id="submitButton" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Submit" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="317.0" prefWidth="195.0" spacing="45.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="helloLabel" />
+            <Label fx:id="helloJohnLabel" />
+            <Label fx:id="arrayNumsLabel" />
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>
