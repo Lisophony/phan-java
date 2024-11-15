@@ -10,7 +10,7 @@ First of all you need Maven and Java 11.
 
 1 Open terminal and clone project : `git clone https://github.com/Lisophony/phan-java.git`
 
-2 Navigate to project  : `cd Phan_Java`
+2 Navigate to project  : `cd phan-java/Phan_Java`
 
 3 Enter the command to launch window application : `mvn clean javafx:run`
 
