@@ -62,7 +62,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>com.andersen.tasks.phan_java/com.andersen.tasks.phan_java.HelloApplication</mainClass>
+              <mainClass>com.andersen.tasks.phan_java/com.andersen.tasks.phan_java.WindowApplication</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
