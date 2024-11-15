@@ -24,7 +24,7 @@ public class ConsoleApplication {
                     break;
                 case 2:
                     System.out.println("Enter name");
-                    System.out.println(InputDataValidation.checkName(scanner.nextLine()));
+                    System.out.println(InputDataValidation.checkName(scanner.nextLine().trim()));
                     break;
                 case 3:
                     System.out.println("Enter Array");
@@ -39,8 +39,6 @@ public class ConsoleApplication {
             }
         }
     }
-
-
 
     public static void showMenu() {
         System.out.println("1 - Enter number\n2 - Enter name\n3 - Enter numeric array\n4 - exit");
